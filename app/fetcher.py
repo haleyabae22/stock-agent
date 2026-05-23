@@ -6,7 +6,7 @@ def fetch_stock(ticker: str):
     try:
         df = yf.download(
             ticker,
-            period="5d",
+            period="60d",
             auto_adjust=False,
             progress=False,
             threads=False
